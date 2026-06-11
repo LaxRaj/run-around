@@ -21,6 +21,10 @@ android/
 .env.local
 .env.*.local
 
+# Next.js
+web/.next/
+web/out/
+
 # macOS
 .DS_Store
 
