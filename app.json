@@ -12,7 +12,8 @@
       "bundleIdentifier": "com.runaround.app",
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "run-around needs your location to generate a round-trip route starting from where you are.",
-        "NSLocationAlwaysAndWhenInUseUsageDescription": "run-around needs your location to generate a round-trip route starting from where you are."
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "run-around needs your location to generate a round-trip route starting from where you are.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -34,10 +35,22 @@
       "expo-router",
       "expo-dev-client",
       "expo-location",
-      ["@rnmapbox/maps", { "RNMapboxMapsImpl": "mapbox" }]
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a356ab22-b65d-4c88-9c60-47b9481a880d"
+      }
+    },
+    "owner": "laxrajs-team"
   }
 }
