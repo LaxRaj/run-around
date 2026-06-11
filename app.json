@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "run-around",
+    "slug": "run-around",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "runaround",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.runaround.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "run-around needs your location to generate a round-trip route starting from where you are.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "run-around needs your location to generate a round-trip route starting from where you are."
+      }
+    },
+    "android": {
+      "package": "com.runaround.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0F",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      ["@rnmapbox/maps", { "RNMapboxMapsImpl": "mapbox" }]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
